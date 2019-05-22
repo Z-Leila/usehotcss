@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#header {
+  width: 16rem;
+  height: 1.1rem;
+  line-height: 1.1rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #000;
+  padding: 0.25rem 0;
+  border-bottom: 0.025rem solid #ccc;
+}
+
+.notice {
+  margin: 0.25rem auto;
+  overflow: hidden;
+}
+
+.notice .notice-tit ul {
+  width: 16rem;
+  height: 5rem;
+  display: flex;
+}
+
+.notice .notice-tit ul li {
+  justify-content: space-around;
+  width: 50%;
+  margin: 0.25rem;
+  line-height: 3.5rem;
+  text-align: center;
+  background-color: #eee;
+  background: #ccc;
+  border: 1px solid #ccc;
+}
+
+.notice .notice-tit ul li.active {
+  background-color: #f3c8c8;
+  border: 1px solid #ec7676;
+}
+
+.notice .notice-tit ul li.active span {
+  color: #c72f2f;
+}
+
+.notice .notice-tit ul li.active a {
+  color: #d16a6a;
+}
+
+.notice span {
+  display: block;
+  margin-bottom: 0.75rem;
+  height: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+[data-dpr="2"] .notice span {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .notice span {
+  font-size: 42px;
+}
+
+.notice a {
+  color: #999;
+  font-size: 12px;
+}
+
+[data-dpr="2"] .notice a {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .notice a {
+  font-size: 36px;
+}
+
+.notice-con {
+  overflow: hidden;
+  margin: 0.25rem;
+}
+
+.notice-con div {
+  font-size: 14px;
+}
+
+[data-dpr="2"] .notice-con div {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .notice-con div {
+  font-size: 42px;
+}
+
+.notice-con ul {
+  width: 16rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.notice-con ul li {
+  width: 20%;
+  line-height: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.notice-con ul li nav {
+  border-radius: 50%;
+  background: #e473ac;
+  opacity: .4;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0.45rem auto 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+[data-dpr="2"] .notice-con ul li nav {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .notice-con ul li nav {
+  font-size: 36px;
+}
+
+.notice-con ul li nav.active {
+  background: #e71352e3;
+  opacity: 1;
+}
+
+.notice-con ul li a {
+  line-height: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+[data-dpr="2"] .notice-con ul li a {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .notice-con ul li a {
+  font-size: 36px;
+}

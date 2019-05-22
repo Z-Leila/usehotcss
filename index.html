@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>这是一个最最普通的演示</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./hotcss.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="header">VIP中心</div>
+
+	<div class="notice">
+		<div class="notice-tit">
+			<ul>
+				<li class="tit active" data-id="1">
+					<span>高级版</span>
+					<a href="#">适合独立摄影师</a>
+				</li>
+				<li class="tit" data-id="2">
+					<span>定制版</span>
+					<a href="#">适合小型工作室</a>
+				</li>
+			</ul>
+		</div>
+		<div class="notice-con">
+			<div class="mod" data-id="1">
+				<div>高级版 适合独立摄影师</div>
+				<ul>
+					<li>
+						<nav class="active">A</nav>
+						<a href="#">高级1</a>
+					</li>
+					<li>
+						<nav>A</nav>
+						<a href="#">高级2</a>
+					</li>
+					<li>
+						<nav class="active">A</nav>
+						<a href="#">高级3</a>
+					</li>
+					<li>
+						<nav class="active">A</nav>
+						<a href="#">高级4</a>
+					</li>
+					<li>
+						<nav >A</nav>
+						<a href="#">高级5</a>
+					</li>
+					<li>
+						<nav>A</nav>
+						<a href="#">高级6</a>
+					</li>
+					<li>
+						<nav>A</nav>
+						<a href="#">高级7</a>
+					</li>
+					<li>
+						<nav class="active">A</nav>
+						<a href="#">高级8</a>
+					</li>
+					<li>
+						<nav>A</nav>
+						<a href="#">高级9</a>
+					</li>
+					<li>
+						<nav class="active">A</nav>
+						<a href="#">高级10</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mod" style="display: none" data-id="2">
+				<div>定制版 适合小型工作室</div>
+				<ul>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制1</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制2</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制3</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制4</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制5</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制6</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制7</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制8</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制9</a>
+					</li>
+					<li>
+						<nav class="active">B</nav>
+						<a href="#">定制10</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <div id="container1">
+		这是一个普通的演示。在head头加载hotcss.js。
+		优雅的使用scss书写css。单位均使用了px2rem处理
+	</div>
+	<div id="container2">
+		这个里面的字体没有使用px2rem。具体写法参看css。
+		如果你在使用chrome。请打开控制台，尝试模拟不同设备，来查看表现。
+	</div> -->
+</body>
+<script>
+	$(".tit").click(function () {
+		$(".tit").removeClass("active");
+		$(this).addClass("active");
+		id = $(this).data("id");
+		$(".mod").slideUp();
+		$(".mod").eq(id - 1).slideDown();
+	})
+</script>
+
+</html>
